@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CSS Gradient Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>CSS Gradient Generator</h1>
+  <p class="sub">Design a gradient, copy the CSS.</p>
+  <div id="preview" role="img" aria-label="Gradient preview"></div>
+  <div class="controls">
+    <label>Colour 1<input type="color" id="c1" value="#1fb5a3"></label>
+    <label>Colour 2<input type="color" id="c2" value="#6c5ce7"></label>
+    <label id="c3wrap" hidden>Colour 3<input type="color" id="c3" value="#f9a826"></label>
+    <label class="angle">Angle: <output id="angleOut">90°</output>
+      <input type="range" id="angle" min="0" max="360" value="90"></label>
+  </div>
+  <div class="row">
+    <button class="primary" id="random">Random gradient</button>
+    <label class="toggle"><input type="checkbox" id="third"> Add a third colour</label>
+  </div>
+  <div class="code"><code id="css"></code><button id="copy">Copy CSS</button></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
